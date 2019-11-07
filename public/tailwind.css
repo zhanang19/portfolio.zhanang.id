@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind utilities;
+
+nav {
+  background-color: theme('colors.primary');
+  @apply flex items-center justify-between flex-wrap p-6;
+}
+
+.navbar {
+  @apply w-full flex-grow;
+}
+
+.bg-primary {
+  background-color: theme('colors.secondary');
+}
+
+.nav-collapse {
+  @apply block;
+}
+
+.nav-link {
+  @apply text-sm;
+}
+
+.nav-link .nav-item {
+  @apply block mt-4 text-white;
+}
+
+.nav-link .nav-item:hover {
+  @apply opacity-75;
+}
+
+.nav-item-cta {
+  @apply inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white mt-4;
+}
+
+.nav-item-cta:hover {
+  @apply bg-white;
+  color: theme('colors.primary');
+}
+
+.tags {
+  @apply px-6 py-4 h-24 bg-white w-full z-50;
+}
+
+.tag {
+  @apply inline-block bg-gray-200 rounded-full px-3 py-1 m-1 text-sm font-semibold text-gray-700 lowercase;
+}
+
+.tag:before {
+  content: "#";
+}
+
+.portfolio-content {
+  @apply py-10 mx-3 flex flex-wrap items-center content-start justify-center;
+}
+
+.card {
+  @apply flex-1 inline-block max-w-xs rounded-lg overflow-hidden shadow-lg m-2 bg-white;
+}
+
+.card .card-image {
+  @apply max-w-xs text-center mx-auto bg-cover bg-center h-64;
+  min-width: 340px;
+}
+
+.card .card-body {
+  @apply px-6 py-4;
+}
+
+.card .card-body .card-title {
+  @apply font-bold text-xl mb-2 truncate;
+}
+
+.card .card-body .card-description {
+  @apply h-20 bg-white z-10;
+}
+
+.card .card-body .card-description p {
+  @apply text-gray-700 text-base;
+}
+
+@screen lg {
+  .navbar {
+    @apply flex items-center w-auto;
+  }
+
+  .nav-collapse {
+    @apply hidden;
+  }
+
+  .nav-link {
+    @apply flex-grow;
+  }
+
+  .nav-link .nav-item {
+    @apply inline-block mt-0 mx-3;
+  }
+
+  .nav-item-cta {
+    @apply mt-0;
+  }
+}

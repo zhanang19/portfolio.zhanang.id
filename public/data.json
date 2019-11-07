@@ -1,0 +1,156 @@
+{
+  "portfolio": [
+    {
+      "name": "Arjuna Ristekdikti",
+      "description": "Situs akreditasi jurnal nasional dan internasional yang dikelola oleh Kementerian Riset, Teknologi, Dan Pendidikan Tinggi Republik Indonesia",
+      "link": "http://arjuna.ristekdikti.go.id",
+      "status": "freelancer",
+      "jobdesk": "Merancang ulang situs lama dengan framework versi terbaru. Memperbarui tampilan keseluruhan situs. Meningkatkan keamanan dan kestabilan data dengan menggunakan API.",
+      "role": ["Frontend Developer", "Backend Developer"],
+      "image": "img/arjuna.ristekdikti.go.id.jpg",
+      "technologies": ["PHP", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "POS Pulsa Arofah",
+      "description": "Sistem informasi manajemen stok untuk penjualan pulsa di Toko Arofah",
+      "link": "https://pulsa.arofah.web.id",
+      "status": "self-employed",
+      "jobdesk": "Merancang dan membuat keseluruhan sistem.",
+      "role": ["Fullstack Developer"],
+      "image": "img/pulsa.arofah.web.id.jpg",
+      "technologies": ["Laravel", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "International Committee Forkinas",
+      "description": "Situs untuk event international committee yang diadakan oleh forum komunikasi ilmiah nasional",
+      "link": "http://forkinas.fkg.unej.ac.id",
+      "status": "freelancer",
+      "jobdesk": "Memilih tema dan menyesuaikannya dengan kebutuhan.",
+      "role": ["Frontend Developer", "Backend Developer"],
+      "image": "img/forkinas.fkg.unej.ac.id.jpg",
+      "technologies": ["Wordpress", "jQuery"]
+    },
+    {
+      "name": "Sister for Student UNEJ PWA Version",
+      "description": "Unofficial Sister for Student PWA Version",
+      "link": "https://sfs-unej.web.app/login.html",
+      "status": "self-employed",
+      "jobdesk": "Mencari celah keamanan di API SFS dari versi lama. Mencoba mengembangkan aplikasi untuk mempermudah pelaporan bug.",
+      "role": ["Fullstack Developer"],
+      "image": "img/sfs-unej.web.app.jpg",
+      "technologies": ["Wordpress", "jQuery"]
+    },
+    {
+      "name": "LPM - LAOS Package Manager",
+      "description": "Aplikasi manajemen dan instalasi paket Linux secara offline",
+      "link": "",
+      "status": "open-source-contribution",
+      "jobdesk": "Scraping data package dari repository utama Ubuntu dan situs Alldeb.net sebagai pengompres paket.",
+      "role": ["Backend API Developer"],
+      "image": "img/lpm-api.zhanang.id.jpg",
+      "technologies": ["PHP", "Scraping"]
+    },
+    {
+      "name": "Gazeboin Landing Page",
+      "description": "Situs untuk promosi kegiatan-kegiatan gazeboin",
+      "link": "https://gazeboin.com",
+      "status": "startup",
+      "jobdesk": "Memperbaiki desain beberapa fitur. Mengintegrasikan landing page dengan Platform",
+      "role": ["Frontend Developer", "Backend Developer"],
+      "image": "img/gazeboin.com.jpg",
+      "technologies": ["Codeigniter", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "Gazeboin Platform",
+      "description": "Platform Tryout dan Ujian Online",
+      "link": "https://event.gazeboin.com",
+      "status": "startup",
+      "jobdesk": "Menyesuaikan beberapa fitur sesuai kebutuhan. Mengintegrasikan platform dengan landing page.",
+      "role": ["Backend Developer"],
+      "image": "img/event.gazeboin.com.jpg",
+      "technologies": ["Moodle"]
+    },
+    {
+      "name": "Gombing Landing Page",
+      "description": "Landing page untuk rintisan startup dalam bidang peternakan",
+      "link": "https://gombing.id",
+      "status": "startup",
+      "jobdesk": "Memilih tema dan menyesuaikannya dengan kebutuhan.",
+      "role": ["Frontend Developer"],
+      "image": "img/gombing.id.jpg",
+      "technologies": ["Wordpress", "jQuery"]
+    },
+    {
+      "name": "Gombing Platform",
+      "description": "Sistem informasi manajemen peternakan kambing",
+      "link": "https://dashboard.gombing.id",
+      "status": "startup",
+      "jobdesk": "Memperbaiki beberapa fitur.",
+      "role": ["Backend Developer"],
+      "image": "img/dashboard.gombing.id.jpg",
+      "technologies": ["Codeigniter"]
+    },
+    {
+      "name": "Lele Pantura Landing Page",
+      "description": "Situs penjualan produk olahan kapuk untuk pengabdian desa di Desa Ambulu, Kab. Probolinggo, Jawa Timur.",
+      "link": "https://lelepantura.id",
+      "status": "dedication",
+      "jobdesk": "Memilih tema dan menyesuaikannya dengan kebutuhan.",
+      "role": ["Frontend Developer"],
+      "image": "img/lelepantura.id.jpg",
+      "technologies": ["Wordpress", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "Intopa",
+      "description": "Situs Indonesian Tourism Parade.",
+      "link": "https://intopa.id",
+      "status": "startup",
+      "jobdesk": "Merancang dan membuat keseluruhan sistem.",
+      "role": ["Fullstack Developer"],
+      "image": "img/intopa.id.jpg",
+      "technologies": ["Laravel", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "Kampoeng Kapuk Jangur Landing Page",
+      "description": "Situs penjualan produk olahan kapuk untuk pengabdian desa di Kampung Jangur, Kab. Probolinggo, Jawa Timur.",
+      "link": "https://kapukjangur.id",
+      "status": "dedication",
+      "jobdesk": "Merancang dan membuat keseluruhan sistem.",
+      "role": ["Fullstack Developer"],
+      "image": "img/kapukjangur.id.jpg",
+      "technologies": ["Laravel", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "POS Resty Batik",
+      "description": "Sistem informasi manajemen stok UMKM batik untuk pengabdian desa di Ambulu, Kab. Jember, Jawa Timur.",
+      "link": "",
+      "status": "dedication",
+      "jobdesk":"Merancang dan membuat keseluruhan sistem.",
+      "role": ["Fullstack Developer"],
+      "image": "img/resty-batik.zhanang.id.jpg",
+      "technologies": ["Laravel", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "POS Toko Grosir pak Totok",
+      "description": "Sistem informasi manajemen penjualan untuk toko grosir.",
+      "link": "",
+      "status": "employee",
+      "jobdesk": "Kustomisasi beberapa fitur.",
+      "role": ["Backend Developer"],
+      "image": "img/no-image.jpg",
+      "technologies": ["Laravel", "jQuery", "Bootstrap"]
+    },
+    {
+      "name": "POS Laurincraft",
+      "description": "Sistem informasi manajemen stok UMKM Kerajinan batok kelapa untuk pengabdian desa di Kec. Wonosari, Kab. Bondowoso, Jawa Timur.",
+      "link": "",
+      "status": "dedication",
+      "jobdesk": "Merancang dan membuat keseluruhan sistem.",
+      "role": ["Fullstack Developer"],
+      "image": "img/no-image.jpg",
+      "technologies": ["Codeigniter", "jQuery", "Bootstrap"]
+    }
+  ],
+  "email": "zhanang19@gmail.com",
+  "cv_link": "https://s.id/cv-zhanang19"
+}
