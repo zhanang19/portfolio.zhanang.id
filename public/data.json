@@ -8,7 +8,7 @@
       "jobdesk": "Merancang ulang situs lama dengan framework versi terbaru. Memperbarui tampilan keseluruhan situs. Meningkatkan keamanan dan kestabilan data dengan menggunakan API.",
       "role": ["Frontend Developer", "Backend Developer"],
       "image": "img/arjuna.ristekdikti.go.id.jpg",
-      "technologies": ["PHP", "jQuery", "Bootstrap"]
+      "technologies": ["Codeigniter", "jQuery", "Bootstrap"]
     },
     {
       "name": "POS Pulsa Arofah",
@@ -38,7 +38,7 @@
       "jobdesk": "Mencari celah keamanan di API SFS dari versi lama. Mencoba mengembangkan aplikasi untuk mempermudah pelaporan bug.",
       "role": ["Fullstack Developer"],
       "image": "img/sfs-unej.web.app.jpg",
-      "technologies": ["Wordpress", "jQuery"]
+      "technologies": ["NodeJS", "PWA", "jQuery"]
     },
     {
       "name": "LPM - LAOS Package Manager",
