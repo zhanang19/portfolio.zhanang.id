@@ -40,7 +40,7 @@ nav {
 }
 
 .tags {
-  @apply px-6 py-4 h-24 bg-white w-full z-50;
+  @apply px-6 mt-2 mb-0 h-24 bg-white w-full z-50;
 }
 
 .tag {

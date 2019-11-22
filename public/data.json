@@ -31,6 +31,16 @@
       "technologies": ["Wordpress", "jQuery"]
     },
     {
+      "name": "Geram App",
+      "description": "Sistem informasi untuk mengetahui tingkat penyebaran jentik yang dikelola oleh Dinas Kesehatan Kabupaten Pasuruan",
+      "link": "",
+      "status": "freelancer",
+      "jobdesk": "Membuat frontend dan melanjutkan.",
+      "role": ["Frontend Developer", "Backend Developer"],
+      "image": "img/no-image.jpg",
+      "technologies": ["Laravel", "Bootstrap", "jQuery"]
+    },
+    {
       "name": "Sister for Student UNEJ PWA Version",
       "description": "Unofficial Sister for Student PWA Version",
       "link": "https://sfs-unej.web.app/login.html",
@@ -38,7 +48,7 @@
       "jobdesk": "Mencari celah keamanan di API SFS dari versi lama. Mencoba mengembangkan aplikasi untuk mempermudah pelaporan bug.",
       "role": ["Fullstack Developer"],
       "image": "img/sfs-unej.web.app.jpg",
-      "technologies": ["NodeJS", "PWA", "jQuery"]
+      "technologies": ["Firebase", "NodeJS", "PWA", "jQuery"]
     },
     {
       "name": "LPM - LAOS Package Manager",
