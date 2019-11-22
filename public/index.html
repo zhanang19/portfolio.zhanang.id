@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="stylesheet" href="build/style.css" />
-        <title>Portfolio Zainal Hasan</title>
-    </head>
-    <body class="antialiased">
-        <nav>
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <span class="font-semibold text-xl tracking-tight">Zainal Hasan</span>
-            </div>
-            <div id="nav-collapse" class="nav-collapse">
-                <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div id="navbar" class="navbar block">
-                <div class="nav-link">
-                    <a href="https://zhanang.id/?utm_source=portfolio" class="nav-item">Beranda</a>
-                    <a id="email-me" class="nav-item">Kirim Email</a>
-                </div>
-                <div>
-                    <a id="download-cv" target="_blank" class="nav-item-cta">Download CV</a>
-                </div>
-            </div>
-        </nav>
-        <div class="container bg-primary">
-            <div id="portfolio-content" class="portfolio-content"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="build/style.css" />
+    <title>Portfolio Zainal Hasan</title>
+  </head>
+  <body class="antialiased">
+    <nav>
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">Zainal Hasan</span>
+      </div>
+      <div id="nav-collapse" class="nav-collapse">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="navbar" class="navbar block">
+        <div class="nav-link">
+          <a href="https://zhanang.id/?utm_source=portfolio" class="nav-item">Beranda</a>
+          <a id="email-me" class="nav-item">Kirim Email</a>
         </div>
-        <script>
-            window.addEventListener('DOMContentLoaded', (e) => {
-                document.getElementById('nav-collapse').addEventListener('click', (e) => {
-                    let navbar = document.getElementById('navbar');
-                    if (navbar.classList.contains('block')) {
-                        navbar.className = 'navbar hidden';
-                    } else {
-                        navbar.className = 'navbar block';
-                    }
-                })
-                let portfolioTemplate = (data) => {
-                    let url = data.link ? `href="${data.link}"` : ``;
-                    let tech = ``;
-                    data.technologies.forEach((v) => {
-                        tech += `<span class="tag">${v}</span>`;
-                    });
-                    return `<a ${url} title="${data.name}"><div class="card"><div class="card-image" style="background-image: url('${data.image}')"></div><div class="card-body"><div class="card-title">${data.name}</div><div class="card-description"><p>${data.description}</p></div></div><div class="tags">${tech}</div></div></a>`;
-                };
-                function reqListener() {
-                    let data = JSON.parse(this.response);
-                    document.getElementById('download-cv').setAttribute('href', data.cv_link);
-                    document.getElementById('email-me').setAttribute('href', `mailto:${data.email}`);
-                    let card = document.getElementById("portfolio-content");
-                    data.portfolio.forEach(e => {
-                        card.innerHTML += portfolioTemplate(e);
-                    });
-                }
+        <div>
+          <a id="download-cv" target="_blank" class="nav-item-cta">Download CV</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container bg-primary">
+        <div id="portfolio-content" class="portfolio-content"></div>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', (e) => {
+        document.getElementById('nav-collapse').addEventListener('click', (e) => {
+          let navbar = document.getElementById('navbar');
+          if (navbar.classList.contains('block')) {
+            navbar.classList.replace('block', 'hidden');
+          } else {
+            navbar.classList.replace('hidden', 'block');
+          }
+        });
+        
+        let portfolioTemplate = (data) => {
+          let url = data.link ? `href="${data.link}"` : ``;
+          let tech = ``;
+          data.technologies.forEach((v) => {
+            tech += `<span class="tag">${v}</span>`;
+          });
+          return `<a ${url} title="${data.name}"><div class="card"><div class="card-image" style="background-image: url('${data.image}')"></div><div class="card-body"><div class="card-title">${data.name}</div><div class="card-description"><p>${data.description}</p></div></div><div class="tags">${tech}</div></div></a>`;
+        };
 
-                let request = new XMLHttpRequest();
-                request.addEventListener('load', reqListener);
-                request.open('GET', 'data.json');
-                request.send();
-            });
-        </script>
-    </body>
+        function reqListener() {
+          let data = JSON.parse(this.response);
+          document.getElementById('download-cv').setAttribute('href', data.cv_link);
+          document.getElementById('email-me').setAttribute('href', `mailto:${data.email}`);
+          let card = document.getElementById("portfolio-content");
+          data.portfolio.forEach(e => {
+            card.innerHTML += portfolioTemplate(e);
+          });
+        }
+
+        let request = new XMLHttpRequest();
+        request.addEventListener('load', reqListener);
+        request.open('GET', 'data.json');
+        request.send();
+      });
+    </script>
+  </body>
 </html>
