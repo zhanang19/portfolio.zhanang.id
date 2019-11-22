@@ -48,7 +48,7 @@
       "jobdesk": "Mencari celah keamanan di API SFS dari versi lama. Mencoba mengembangkan aplikasi untuk mempermudah pelaporan bug.",
       "role": ["Fullstack Developer"],
       "image": "img/sfs-unej.web.app.jpg",
-      "technologies": ["NodeJS", "PWA", "jQuery"]
+      "technologies": ["Firebase", "NodeJS", "PWA", "jQuery"]
     },
     {
       "name": "LPM - LAOS Package Manager",
