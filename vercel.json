@@ -1,0 +1,6 @@
+{
+    "redirects": [
+        { "source": "/view-source", "destination": "https://github.com/zhanang19/portfolio.zhanang.id" },
+        { "source": "/(.*)", "destination": "https://zhanang.id/portfolio?utm_source=portfolio.zhanang.id&utm_campaign=permanent-redirect" }
+    ]
+}
